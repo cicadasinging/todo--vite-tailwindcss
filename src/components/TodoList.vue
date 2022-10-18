@@ -14,10 +14,3 @@ import TodoListItem from "./TodoListItem.vue";
 
 defineProps({ todos: Array });
 </script>
-
-<style scoped>
-.todo-list {
-  display: grid;
-  row-gap: 14px;
-}
-</style>
