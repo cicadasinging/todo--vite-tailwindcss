@@ -4,6 +4,6 @@
 
 @layer base {
     html {
-        font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
+        font-family: Helvetica, PingFang SC, Microsoft Yahei, sans-serif;
     }
 }

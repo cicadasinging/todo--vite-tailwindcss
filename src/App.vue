@@ -1,8 +1,8 @@
 <template>
-  <main>
-    <div class="container">
-      <img alt="Vue logo" class="logo" src="./assets/logo.svg" />
-      <h1>欢迎使用 Todo App！</h1>
+  <main class="min-h-screen w-screen bg-indigo-100 py-28">
+    <div class="container rounded-3xl bg-slate-50 px-7 py-9 shadow-2xl">
+      <img alt="Vue logo" class="mx-auto block h-16 w-16" src="./assets/logo.svg" />
+      <h1 class="my-6 text-3xl font-bold text-slate-600">欢迎使用 Todo App！</h1>
       <todo-add :tid="todos.length" @add-todo="addTodo" />
       <todo-filter :selected="filter" @change-filter="changeFilter" />
       <todo-list :todos="filteredTodos" />
