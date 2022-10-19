@@ -1,5 +1,5 @@
 <template>
-  <div class="relative grid place-items-end">
+  <div class="relative flex place-items-center">
     <input
       v-model.trim="todoContent"
       class="w-full rounded-full border-none py-4 pl-4 pl-12 text-base text-slate-600 outline-none hover:shadow"
@@ -7,7 +7,7 @@
       @keyup.enter="emitAddTodo"
     />
     <button
-      class="absolute h-14 w-14 rounded-full bg-gradient-to-r from-purple-300 to-blue-300 hover:brightness-105"
+      class="absolute right-0 h-14 w-14 rounded-full bg-gradient-to-r from-purple-300 to-blue-300 hover:brightness-105"
       @click="emitAddTodo"
     >
       <plus-small-icon class="h-14 w-14 rounded-full fill-white" />
