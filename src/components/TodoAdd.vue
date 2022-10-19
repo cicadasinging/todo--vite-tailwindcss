@@ -1,13 +1,22 @@
 <template>
-  <div class="input-add">
-    <input v-model.trim="todoContent" type="text" @keyup.enter="emitAddTodo" />
-    <button @click="emitAddTodo">
-      <i class="plus" />
+  <div class="relative grid place-items-end">
+    <input
+      v-model.trim="todoContent"
+      class="w-full rounded-full border-none py-4 pl-4 pl-12 text-base text-slate-600 outline-hidden hover:shadow"
+      type="text"
+      @keyup.enter="emitAddTodo"
+    />
+    <button
+      class="absolute h-14 w-14 rounded-full bg-gradient-to-r from-purple-300 to-blue-300 hover:brightness-105"
+      @click="emitAddTodo"
+    >
+      <plus-small-icon class="h-14 w-14 rounded-full fill-white" />
     </button>
   </div>
 </template>
 
 <script setup>
+import { PlusSmallIcon } from "@heroicons/vue/24/solid";
 import { ref } from "vue";
 
 const props = defineProps({ tid: Number });
