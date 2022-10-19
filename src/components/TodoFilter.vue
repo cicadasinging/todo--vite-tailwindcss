@@ -1,13 +1,14 @@
 <template>
-  <div class="filters">
-    <span
+  <div class="my-6 mx-0.5 flex text-sm text-slate-400">
+    <button
       v-for="filter in filters"
       :key="filter.value"
-      :class="{ active: selected === filter.value }"
-      class="filter"
+      :class="{ 'scale-125 font-medium text-violet-500': selected === filter.value }"
+      class="mr-3.5 duration-500"
       @click="emitChangeFilter(filter.value)"
-      >{{ filter.label }}
-    </span>
+    >
+      {{ filter.label }}
+    </button>
   </div>
 </template>
 

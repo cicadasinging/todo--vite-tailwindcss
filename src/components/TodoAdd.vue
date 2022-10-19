@@ -2,7 +2,7 @@
   <div class="relative grid place-items-end">
     <input
       v-model.trim="todoContent"
-      class="w-full rounded-full border-none py-4 pl-4 pl-12 text-base text-slate-600 outline-hidden hover:shadow"
+      class="w-full rounded-full border-none py-4 pl-4 pl-12 text-base text-slate-600 outline-none hover:shadow"
       type="text"
       @keyup.enter="emitAddTodo"
     />
