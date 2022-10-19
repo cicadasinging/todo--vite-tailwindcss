@@ -1,5 +1,5 @@
 <template>
-  <div class="todo-list">
+  <div class="grid gap-3.5">
     <todo-list-item
       v-for="todo in todos"
       :key="todo.id"
